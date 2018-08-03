@@ -1,0 +1,16 @@
+PODS:
+  - SwiftyFloatingView (0.1.1)
+
+DEPENDENCIES:
+  - SwiftyFloatingView (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftyFloatingView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SwiftyFloatingView: fcbeef9c54948a3fcc05ef77dc832e46d80eccd7
+
+PODFILE CHECKSUM: 1e5764f2ead8c2bc5520f4bc92ba6ea7cbe6f493
+
+COCOAPODS: 1.5.3

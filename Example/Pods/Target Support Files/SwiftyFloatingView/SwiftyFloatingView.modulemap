@@ -1,0 +1,6 @@
+framework module SwiftyFloatingView {
+  umbrella header "SwiftyFloatingView-umbrella.h"
+
+  export *
+  module * { export * }
+}
