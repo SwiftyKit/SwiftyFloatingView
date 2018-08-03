@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "SwiftyFloatingView"
   s.version      = "0.1.1"
-  s.summary      = "An iOS TextView with placeholder and limit characters count support"
+  s.summary      = "Floating View is a view on top of all views. It can show, move or hide anytime. Floating UI could be customized. "
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?

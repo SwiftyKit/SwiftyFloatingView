@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment version="2304" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,42 +18,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pbg-ia-kDB" customClass="SwiftyTextView" customModule="SwiftyTextView">
-                                <rect key="frame" x="67" y="103" width="240" height="128"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPR-L8-A6U">
+                                <rect key="frame" x="50" y="119" width="274" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.50588235290000005" blue="0.047058823530000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="6tn-ir-bkX"/>
-                                    <constraint firstAttribute="height" constant="128" id="9RF-zZ-zsL"/>
+                                    <constraint firstAttribute="height" constant="42" id="UwE-Ge-kym"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showTextCountView" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Test Placeholder..."/>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="minNumberOfWords">
-                                        <integer key="value" value="0"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="maxNumberOfWords">
-                                        <integer key="value" value="60"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textView>
+                                <state key="normal" title="Show">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9C8-lK-1tr">
+                                <rect key="frame" x="50" y="211" width="274" height="42"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Hide">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1Z-on-hLk">
+                                <rect key="frame" x="50" y="395" width="274" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Navigate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5U2-oN-Pve">
+                                <rect key="frame" x="50" y="303" width="274" height="42"/>
+                                <color key="backgroundColor" red="0.20601709702996887" green="0.36153610399939079" blue="0.80251867435703483" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Change Style">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Pbg-ia-kDB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="OUU-Ae-2Xn"/>
-                            <constraint firstItem="Pbg-ia-kDB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cTm-Bb-xO5"/>
+                            <constraint firstItem="9C8-lK-1tr" firstAttribute="height" secondItem="jPR-L8-A6U" secondAttribute="height" id="12E-U2-UBj"/>
+                            <constraint firstItem="E1Z-on-hLk" firstAttribute="height" secondItem="jPR-L8-A6U" secondAttribute="height" id="4LF-uv-fki"/>
+                            <constraint firstItem="9C8-lK-1tr" firstAttribute="top" secondItem="jPR-L8-A6U" secondAttribute="bottom" constant="50" id="5Wa-n0-tFs"/>
+                            <constraint firstItem="5U2-oN-Pve" firstAttribute="height" secondItem="jPR-L8-A6U" secondAttribute="height" id="9QJ-AV-aIO"/>
+                            <constraint firstItem="5U2-oN-Pve" firstAttribute="trailing" secondItem="jPR-L8-A6U" secondAttribute="trailing" id="A1f-bS-n0A"/>
+                            <constraint firstItem="E1Z-on-hLk" firstAttribute="top" secondItem="5U2-oN-Pve" secondAttribute="bottom" constant="50" id="Afr-nB-RD4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jPR-L8-A6U" secondAttribute="trailing" constant="51" id="BvX-KM-Lxx"/>
+                            <constraint firstItem="5U2-oN-Pve" firstAttribute="top" secondItem="9C8-lK-1tr" secondAttribute="bottom" constant="50" id="HGP-zZ-IRq"/>
+                            <constraint firstItem="jPR-L8-A6U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Lsg-wp-FcK"/>
+                            <constraint firstItem="9C8-lK-1tr" firstAttribute="leading" secondItem="jPR-L8-A6U" secondAttribute="leading" id="Pbh-a8-6pK"/>
+                            <constraint firstItem="E1Z-on-hLk" firstAttribute="leading" secondItem="jPR-L8-A6U" secondAttribute="leading" id="Q13-M5-Qsq"/>
+                            <constraint firstItem="jPR-L8-A6U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="XSb-E5-pBi"/>
+                            <constraint firstItem="5U2-oN-Pve" firstAttribute="leading" secondItem="jPR-L8-A6U" secondAttribute="leading" id="hVZ-UK-Xsv"/>
+                            <constraint firstItem="E1Z-on-hLk" firstAttribute="trailing" secondItem="jPR-L8-A6U" secondAttribute="trailing" id="pY0-gK-y4w"/>
+                            <constraint firstItem="9C8-lK-1tr" firstAttribute="trailing" secondItem="jPR-L8-A6U" secondAttribute="trailing" id="v02-LY-Q9p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="textView" destination="Pbg-ia-kDB" id="ffP-yW-7y9"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="31.934032983508249"/>
         </scene>
     </scenes>
 </document>

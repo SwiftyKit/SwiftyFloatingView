@@ -44,7 +44,7 @@ class FloatingWindow : UIWindow {
     }
 }
 
-public class FloatingView {
+public class SwiftyFloatingView {
 	
 	private var floatingWindow:FloatingWindow?
 	private var appWindow:UIWindow?

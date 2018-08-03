@@ -7,16 +7,25 @@
 //
 
 import UIKit
-import SwiftyTextView
+import SwiftyFloatingView
 
 class ViewController: UIViewController {
-    @IBOutlet weak var textView: SwiftyTextView!
+
+    lazy var floatingView : SwiftyFloatingView = {
+        let normalButton:UIButton = UIButton(type: UIButtonType.system)
+        normalButton.backgroundColor = .red
+        normalButton.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        normalButton.layer.cornerRadius = 50
+        normalButton.addTarget(self, action: #selector(ViewController.printer), for: .touchUpInside)
+        var floatingView = SwiftyFloatingView(with: normalButton)
+        floatingView.delegate = self
+        return floatingView
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        textView.layer.borderColor = UIColor.lightGray.cgColor
-        textView.layer.borderWidth = 0.5
+
         
     }
 
@@ -26,5 +35,22 @@ class ViewController: UIViewController {
     }
 
 
+}
+
+extension ViewController:FloatingViewDelegate {
+    
+    func viewDraggingDidBegin(view: UIView, in window: UIWindow?) {
+        UIView.animate(withDuration: 0.4) {
+            view.alpha = 0.8
+        }
+    }
+    
+    func viewDraggingDidEnd(view: UIView, in window: UIWindow?) {
+        (view as? UIButton)?.cancelTracking(with: nil)
+        UIView.animate(withDuration: 0.4) {
+            view.alpha = 1.0
+        }
+    }
+    
 }
 
