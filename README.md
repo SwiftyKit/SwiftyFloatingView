@@ -1,56 +1,42 @@
-# SwiftyTextView
+# SwiftyFloatingView
 
 [![License](https://img.shields.io/:license-mit-blue.svg)](https://doge.mit-license.org)
 [![Language](https://img.shields.io/badge/language-swift-orange.svg?style=flat)](https://developer.apple.com/swift)
 
 ## Overview
 
-SwiftyTextView is an iOS enhanced TextView with placeholder and limit characters count support.
+SwiftyTextView is a view on top of all views. you can have navigation controller, Tabbar contoller or anything. it goes on top of everyview and will be presented everywhere.
 
-![enter image description here](https://raw.githubusercontent.com/SwiftyKit/SwiftyTextView/master/Images/screenshot.gif)
+![enter image description here](./Images/screenshot.gif)
  
  
 ## Installation
  
 ### CocoaPods 
 
-SwiftyTextView is available through [CocoaPods](http://cocoapods.org). To install
+SwiftyFloatingView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'SwiftyTextView'
+pod 'SwiftyFloatingView'
 ```
 
 ### Manual
 
-Drag 'n drop SwiftyTextView.swift into your project.
+Drag 'n drop SwiftyFloatingView.swift into your project.
  
 
 ## Usage 
 
-### Interface Builder 
 
-Select the UITextView you want to use and change the class to SwiftyTextView.
-
-
- - Placeholder text
- - Placeholder color
- - Limit number of characters
- - Show text count view
-
-You can see the changes directly on the Interface Builder!
-
-### Code
  
 ```swift
-let textView:SwiftyTextView = SwiftyTextView.init(frame: CGRect.init(x: X, y: Y, width: WIDTH, height: HEIGHT))
-      textView.backgroundColor = .red
-      textView.placeholder = "Please input text..."
-      textView.placeholderColor = UIColor.lightGray
-      textView.minNumberOfWords = 0
-      textView.maxNumberOfWords = 30
-      textView.showTextCountView = true
-      self.view.addSubview(txtfield)
+        let normalButton:UIButton = UIButton(type: UIButtonType.system)
+        normalButton.backgroundColor = .red
+        normalButton.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+        normalButton.layer.cornerRadius = 50
+        normalButton.addTarget(self, action: #selector(ViewController.printer), for: .touchUpInside)
+        var floatingView = SwiftyFloatingView(with: normalButton)
 ```
 
 ## Requirements
@@ -65,4 +51,4 @@ let textView:SwiftyTextView = SwiftyTextView.init(frame: CGRect.init(x: X, y: Y,
  
 ## License
 
-SwiftyTextView is available under the MIT license. See the LICENSE file for more info.
+SwiftyFloatingView is available under the MIT license. See the LICENSE file for more info.
