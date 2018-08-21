@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "SwiftyFloatingView"
   s.version      = "0.1.1"
-  s.summary      = "Floating View is a view on top of all views. It can show, move or hide anytime. Floating UI could be customized. "
+  s.summary      = "SwiftyFloatingView is a view on top of all views. It can show, move or hide anytime. And It's UI could be customized. "
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   Floating View for iOS.
+                   SwiftyFloatingView is a view on top of all views. It can show, move or hide anytime. And It's UI could be customized. A floating View for iOS.
                    DESC
 
   s.homepage     = "https://github.com/SwiftyKit/SwiftyFloatingView"
