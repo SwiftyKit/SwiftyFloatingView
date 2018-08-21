@@ -5,7 +5,7 @@
 
 ## Overview
 
-SwiftyTextView is a view on top of all views. you can have navigation controller, Tabbar contoller or anything. it goes on top of everyview and will be presented everywhere.
+SwiftyFloatingView is a view on top of all views. you can have navigation controller, Tabbar contoller or anything. it goes on top of everyview and will be presented everywhere.
 
 ![enter image description here](./Images/screenshot.gif)
  
