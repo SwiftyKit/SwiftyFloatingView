@@ -67,21 +67,27 @@ public class SwiftyFloatingView {
 		- Parameter layer: The layer of Z that the View will be presented, by default it is 1. in case of have more windows change it.
 	
 	*/
-	public init(with view:UIView , layer:CGFloat = 1) {
-        
-        self.floatingView = view
+	public init(with view: UIView , layer: CGFloat = 1) {
+
 		self.appWindow = UIApplication.shared.keyWindow
-		self.floatingWindow = FloatingWindow(frame: view.frame)
-        self.floatingWindow?.topView = view
-        self.floatingWindow?.rootViewController?.view = view
 		self.floatingWindow?.windowLevel = layer
 		//self.floatingWindow?.makeKeyAndVisible()
+        setContentView(view)
+
+	}
+    
+    public func setContentView(_ view: UIView) {
+        self.floatingWindow = FloatingWindow(frame: view.frame)
+        self.floatingView = view
+        self.floatingWindow?.topView = view
         
         let panGesture = UIPanGestureRecognizer(target: self, action:#selector(handlePanGesture(panGesture:)))
         panGesture.cancelsTouchesInView = false
         view.addGestureRecognizer(panGesture)
         
-	}
+        isShowing = false
+    }
+
 
 	/**
 	Showing floating view
@@ -101,7 +107,7 @@ public class SwiftyFloatingView {
 		floatingWindow?.isHidden = true
 	}
     
-    func setFrame(_ frame: CGRect) {
+    public func setFrame(_ frame: CGRect) {
         floatingWindow?.frame = frame
     }
 	
