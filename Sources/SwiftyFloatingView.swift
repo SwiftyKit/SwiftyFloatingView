@@ -1,9 +1,9 @@
 //
-//  FloatingView.swift
-//  FloatingView
+//  SwiftyFloatingView.swift
+//  SwiftyFloatingView
 //
-//  Created by Ali Pourhadi on 2017-05-07.
-//  Copyright © 2017 Ali Pourhadi. All rights reserved.
+//  Created by SwiftyKit on 2018-08-07.
+//  Copyright © 2018 SwiftyKit. All rights reserved.
 //
 
 import Foundation
