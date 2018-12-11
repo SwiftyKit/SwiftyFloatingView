@@ -1,8 +1,8 @@
 {
   "name": "SwiftyFloatingView",
-  "version": "0.1.1",
-  "summary": "An iOS TextView with placeholder and limit characters count support",
-  "description": "SwiftyFloatingView is a enhanced TextView with placeholder and limit characters count support for iOS.",
+  "version": "0.1.2",
+  "summary": "SwiftyFloatingView is a view on top of all views. It can show, move or hide anytime. And It's UI could be customized.",
+  "description": "SwiftyFloatingView is a view on top of all views. It can show, move or hide anytime. And It's UI could be customized. A floating View for iOS.",
   "homepage": "https://github.com/SwiftyKit/SwiftyFloatingView",
   "license": {
     "type": "MIT",
@@ -14,10 +14,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "swift_version": "3.2",
+  "swift_version": "4.2",
   "source": {
     "git": "https://github.com/SwiftyKit/SwiftyFloatingView.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "source_files": [
     "Sources/*.swift",

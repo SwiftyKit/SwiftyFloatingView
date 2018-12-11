@@ -12,7 +12,7 @@ import SwiftyFloatingView
 class ViewController: UIViewController {
 
     lazy var floatingView: SwiftyFloatingView = {
-        let normalButton:UIButton = UIButton(type: UIButtonType.system)
+        let normalButton:UIButton = UIButton(type: UIButton.ButtonType.system)
         normalButton.backgroundColor = .red
         normalButton.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         normalButton.layer.cornerRadius = 50
@@ -60,7 +60,7 @@ class ViewController: UIViewController {
         
         isCircle = !isCircle
         if isCircle {
-            let normalButton:UIButton = UIButton(type: UIButtonType.system)
+            let normalButton:UIButton = UIButton(type: UIButton.ButtonType.system)
             normalButton.backgroundColor = .red
             normalButton.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
             normalButton.layer.cornerRadius = 50
@@ -68,7 +68,7 @@ class ViewController: UIViewController {
             floatingView.setContentView(normalButton)
             floatingView.setFrame(CGRect(x: (UIScreen.main.bounds.width - normalButton.frame.width)/2, y: yPosition, width: normalButton.frame.width, height: normalButton.frame.height))
         }else {
-            let normalButton:UIButton = UIButton(type: UIButtonType.system)
+            let normalButton:UIButton = UIButton(type: UIButton.ButtonType.system)
             normalButton.backgroundColor = .green
             normalButton.frame = CGRect(x: 0, y: 0, width: 60, height: 100)
             normalButton.addTarget(self, action: #selector(ViewController.printer), for: .touchUpInside)

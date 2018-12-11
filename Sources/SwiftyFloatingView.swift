@@ -70,7 +70,7 @@ public class SwiftyFloatingView {
 	public init(with view: UIView , layer: CGFloat = 1) {
 
 		self.appWindow = UIApplication.shared.keyWindow
-		self.floatingWindow?.windowLevel = layer
+        self.floatingWindow?.windowLevel = UIWindow.Level(rawValue: layer)
 		//self.floatingWindow?.makeKeyAndVisible()
         setContentView(view)
 

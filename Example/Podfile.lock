@@ -1,5 +1,5 @@
 PODS:
-  - SwiftyFloatingView (0.1.1)
+  - SwiftyFloatingView (0.1.2)
 
 DEPENDENCIES:
   - SwiftyFloatingView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftyFloatingView: fcbeef9c54948a3fcc05ef77dc832e46d80eccd7
+  SwiftyFloatingView: 6981f391d1c88d5a8db5f3f10b9e5fadc05ce87a
 
 PODFILE CHECKSUM: 1e5764f2ead8c2bc5520f4bc92ba6ea7cbe6f493
 
