@@ -31,10 +31,7 @@ Drag 'n drop SwiftyFloatingView.swift into your project.
  
 ```swift
         let normalButton:UIButton = UIButton(type:UIButton.ButtonType.system)
-        normalButton.backgroundColor = .red
         normalButton.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        normalButton.layer.cornerRadius = 50
-        normalButton.addTarget(self, action: #selector(ViewController.printer), for: .touchUpInside)
         var floatingView = SwiftyFloatingView(with: normalButton)
 ```
 
