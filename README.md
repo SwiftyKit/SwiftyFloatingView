@@ -22,7 +22,6 @@ pod 'SwiftyFloatingView'
 ```
 
 ### Manual
-
 Drag 'n drop SwiftyFloatingView.swift into your project.
  
 
@@ -31,7 +30,7 @@ Drag 'n drop SwiftyFloatingView.swift into your project.
 
  
 ```swift
-        let normalButton:UIButton = UIButton(type: UIButtonType.system)
+        let normalButton:UIButton = UIButton(type:UIButton.ButtonType.system)
         normalButton.backgroundColor = .red
         normalButton.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
         normalButton.layer.cornerRadius = 50
@@ -40,7 +39,7 @@ Drag 'n drop SwiftyFloatingView.swift into your project.
 ```
 
 ## Requirements
-- Swift 3.0+
+- Swift 4.2
 - iOS 8.0+
 
 ## Contact & Contribute
