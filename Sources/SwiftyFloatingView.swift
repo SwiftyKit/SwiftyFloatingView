@@ -17,6 +17,7 @@ public protocol FloatingViewDelegate {
 class FloatingWindow : UIWindow {
     public var topView : UIView = UIView()
     lazy var pointInsideCalled : Bool = true
+    weak var mainWindow: UIWindow? = UIApplication.shared.keyWindow
     
     override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
         if self.point(inside: point, with: event) {
@@ -42,6 +43,13 @@ class FloatingWindow : UIWindow {
         }
         return nil
     }
+    
+    override func becomeKey() {
+        super.becomeKey()
+        mainWindow?.makeKeyAndVisible()
+    }
+    
+
 }
 
 public class SwiftyFloatingView {
