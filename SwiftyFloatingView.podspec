@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SwiftyFloatingView"
-  s.version      = "0.1.2"
+  s.version      = "0.1.3"
   s.summary      = "SwiftyFloatingView is a view on top of all views. It can show, move or hide anytime. And It's UI could be customized. "
 
   # This description is used to generate tags and improve search results.
